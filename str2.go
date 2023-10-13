@@ -87,9 +87,6 @@ func (s String) DateTime() String {
 func (s String) Errs() (errs []Problem) {
 	for _, d := range s.details {
 		p := Problem{Detail: d}
-		if IncludeTitle {
-			p.Title = InvalidValue
-		}
 		errs = append(errs, p)
 	}
 	return errs

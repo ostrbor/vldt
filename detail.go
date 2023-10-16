@@ -9,20 +9,8 @@ func requiredStr(n string) string {
 	return fmt.Sprintf("%s: required (must be set or null/empty string are not allowed)", n)
 }
 
-func requiredStrPtr(n string) string {
-	return fmt.Sprintf("%s: required (must be set or null is not allowed)", n)
-}
-
 func requiredInt(n string) string {
 	return fmt.Sprintf("%s: required (must be set or null/0 are not allowed)", n)
-}
-
-func requiredIntPtr(n string) string {
-	return fmt.Sprintf("%s: required (must be set or null is not allowed)", n)
-}
-
-func requiredBool(n string) string {
-	return fmt.Sprintf("%s: required (must be set or null is not allowed)", n)
 }
 
 func minLength(n, v string, min int) string {

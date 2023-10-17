@@ -13,6 +13,10 @@ func requiredInt(n string) string {
 	return fmt.Sprintf("%s: required (must be set or null/0 are not allowed)", n)
 }
 
+func requiredArr(n string) string {
+	return fmt.Sprintf("%s: required (must be set or null is not allowed)", n)
+}
+
 func minLength(n, v string, min int) string {
 	return fmt.Sprintf("%s: minLength is %d, received a length of %d in the string '%s'", n, min, len(v), short(v))
 }
